@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #a8aeb4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Istok Web', sans-serif;
+  font-size: 12px;
+}
+
+.player-container {
+  height: 500px;
+  width: 400px;
+  background: #e0e0e0;
+  border-radius: 20px;
+  box-shadow: 2px 4px 30px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: -2px 0 30px 5px rgba(0, 0, 0, 0.3);
+}
+
+.img-container {
+  position: relative;
+  top: -50px;
+  left: 50px;
+  height: 300px;
+  width: 300px;
+}
+
+.img-container img {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 2px 5px 30px 5px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  font-size: 25px;
+  text-align: center;
+  margin: 0;
+}
+
+h3 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+  margin: 5px 0 0;
+}
+
+/* Progress */
+.progress-container {
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 40px 20px;
+  height: 4px;
+  width: 90%;
+}
+
+.progress {
+  background: #232324;
+  border-radius: 5px;
+  height: 100%;
+  /* change this to show progress */
+  width: 0;
+  transition: width 0.1s linear;
+}
+
+.duration-wrapper {
+  position: relative;
+  top: -25px;
+  display: flex;
+  width: 360px;
+  justify-content: space-between;
+  cursor: default;
+}
+
+/* Controls */
+.player-controls {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  left: 140px;
+  bottom: 20px;
+  width: 200px;
+}
+
+.fas {
+  font-size: 30px;
+  color: rgb(129, 129, 129);
+  margin-right: 20px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fas:hover {
+  filter: brightness(80%);
+}
+.main-button {
+  font-size: 40px;
+  position: relative;
+  top: 3px;
+}
+.stop-button {
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+/* Media Query: iPhone (Vertical) */
+@media screen and (max-width: 376px) {
+  .player-container {
+    width: 95vw;
+  }
+  .img-container {
+    left: 29px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  .player-controls {
+    top: -10px;
+    left: 100px;
+  }
+}
