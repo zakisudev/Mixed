@@ -2,10 +2,10 @@ import React from 'react';
 import Lists from '../components/Lists';
 import { Link, useLoaderData } from 'react-router-dom';
 import { getHostVans } from '../apis';
-import requireAuth from '../util';
+import { requireAuth } from '../util';
 
-export async function loader() {
-  await requireAuth();
+export async function loader({ request }) {
+  await requireAuth(request);
   return getHostVans();
 }
 function HostVans() {

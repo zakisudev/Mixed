@@ -397,6 +397,9 @@ a.home-button {
   font-size: 1.5rem;
   cursor: pointer;
 }
+.login-form button:disabled {
+  background-color: #7a7a7a;
+}
 .login-container h4 {
   font-size: 20px;
   color: red;
