@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+h1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 4rem;
+  background: royalblue;
+  color: white;
+  text-align: center;
+  font-weight: 100;
+}
+a {
+  font-size: 2.5rem;
+  color: black;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 10px;
+}
+li {
+  background: rgb(12, 92, 95);
+  border-radius: 5px;
+  color: white;
+}
