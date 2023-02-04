@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600&display=swap');
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+#logo {
+  margin-left: 36px;
+}
+
+#logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  background-color: #fff7ed;
+}
+
+.navbar a {
+  font-size: 25.24px;
+  color: Black;
+  text-decoration: none;
+  font-weight: 600;
+  margin-right: 36px;
+}
+
+.links a {
+  font-size: 16px;
+}
+
+.slogan {
+  display: block;
+  height: 386.7px;
+  width: 100vw;
+  text-align: left;
+  padding: 30px;
+  background: url('../images/image_53.svg') center no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.slogan h1 {
+  font-size: 36px;
+}
+
+.slogan button {
+  width: 100%;
+  margin-top: 52px;
+  border-radius: 5px;
+  background-color: #ff8c38;
+  height: 50px;
+  border: none;
+  color: white;
+}
+
+span {
+  display: block;
+  height: 233.21px;
+  width: 100vw;
+}
+.image {
+  background: url('../images/image_54.svg') center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 233.21px;
+}
+
+.hero-about {
+  margin: 50px 30px;
+  text-align: left;
+}
+
+.hero-about h1 {
+  font-size: 32px;
+}
+
+.hero-about p {
+  font-size: 16px;
+}
+.explore {
+  background-color: #ffcc8d;
+  border-radius: 5px;
+  margin-top: 55px;
+}
+
+.explore h1 {
+  font-size: 24px;
+  padding: 32px 0 0 38px;
+}
+
+.ex-button {
+  width: 174px;
+  height: 49px;
+  color: white;
+  background-color: #161616;
+  border: none;
+  border-radius: 10px;
+  margin: 32px;
+  font-weight: bold;
+}
+
+footer {
+  color: AAAAAA;
+  text-align: center;
+  padding-top: 22px;
+  height: 74px;
+  width: 100%;
+  background-color: #252525;
+  margin: 0;
+}
+
+.cards {
+  width: 229.23px;
+  height: 306.96px;
+  position: relative;
+  margin-top: 26.91px;
+}
+.cards img {
+  width: 100%;
+  border-radius: 5px;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.head h2,
+.head p {
+  font-size: 20px;
+}
+.simple {
+  width: 85.71px;
+  height: 34px;
+  background-color: #e17654;
+  color: white;
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  border-radius: 5px;
+  border: none;
+}
+.rugged {
+  width: 85.71px;
+  height: 34px;
+  background-color: #115e59;
+  color: white;
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  border-radius: 5px;
+  border: none;
+}
+.luxury {
+  width: 85.71px;
+  height: 34px;
+  background-color: #161616;
+  color: white;
+  position: absolute;
+  bottom: 2px;
+  border-radius: 5px;
+  border: none;
+  left: 0;
+}
+.cards p {
+  float: right;
+}
+.lists {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-right: 30px;
+}
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 30px;
+}
+.filters button {
+  width: 104px;
+  height: 37px;
+  background-color: #ffead0;
+  color: #4d4d4d;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+.filters p {
+  text-decoration: underline;
+  color: #4d4d4d;
+}
+.cds h1 {
+  font-size: 32px;
+  color: #161616;
+  text-align: left;
+}
+.cds {
+  margin-left: 30px;
+}
