@@ -1,5 +1,6 @@
 import React from 'react';
-import Card from './Card';
+import Card from '../components/Card';
+import { Link } from 'react-router-dom';
 
 export default function Vans() {
   const [vans, setVans] = React.useState([]);
@@ -26,18 +27,20 @@ export default function Vans() {
           {vans.map((vans) => {
             return (
               <div>
-                <Card
-                  name={vans.name}
-                  image={vans.imageUrl}
-                  price={vans.price}
-                  type={vans.type}
-                />
+                <Link to={`/vans/${vans.id}`}>
+                  <Card
+                    key={vans.id}
+                    name={vans.name}
+                    image={vans.imageUrl}
+                    price={vans.price}
+                    type={vans.type}
+                  />
+                </Link>
               </div>
             );
           })}
         </div>
       </div>
-      <footer>Ⓒ 2022 #VANLIFE</footer>
     </>
   );
 }

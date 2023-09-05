@@ -1,0 +1,42 @@
+.van-detail-container {
+  margin: 37px auto;
+  width: 496px;
+  height: 499px;
+}
+.current-van-detail h2 {
+  margin-top: 30px;
+  font-size: 15.95px;
+  margin-left: 30px;
+  margin-bottom: -5px;
+}
+.current-van-detail button {
+  position: relative;
+}
+.current-van-detail img {
+  width: 160px;
+  aspect-ratio: 1/1;
+  border-radius: 5px;
+}
+
+.new-detail {
+  display: flex;
+  align-items: center;
+}
+.div {
+  margin-left: 30px;
+  text-align: left;
+  margin-top: 0;
+}
+.div h2 {
+  font-size: 26.26px;
+  margin-top: 10px;
+  margin-left: 0;
+}
+.div p {
+  margin-top: 5px;
+  margin-left: 0;
+}
+.div .price b {
+  font-size: 19.54px;
+  line-height: 1.4;
+}

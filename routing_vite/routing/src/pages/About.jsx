@@ -23,7 +23,6 @@ export default function About() {
           <button className="ex-button">Explore our vans</button>
         </div>
       </div>
-      <footer>Ⓒ 2022 #VANLIFE</footer>
     </div>
   );
 }

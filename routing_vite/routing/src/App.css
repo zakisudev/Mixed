@@ -5,6 +5,7 @@
   margin: 0 auto;
   text-align: center;
   font-family: 'Inter', sans-serif;
+  background-color: #fff7ed;
 }
 #logo {
   margin-left: 36px;
@@ -128,11 +129,15 @@ footer {
 .head {
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: flex-start;
+  text-align: left;
 }
 .head h2,
 .head p {
   font-size: 20px;
+  color: black;
+  margin: 0;
+  padding-top: 9px;
 }
 .simple {
   width: 85.71px;
@@ -176,6 +181,7 @@ footer {
   align-items: center;
   flex-wrap: wrap;
   margin-right: 30px;
+  margin-bottom: 30px;
 }
 .filters {
   display: flex;
@@ -191,10 +197,12 @@ footer {
   border-radius: 5px;
   border: none;
   font-size: 16px;
+  cursor: pointer;
 }
 .filters p {
   text-decoration: underline;
   color: #4d4d4d;
+  cursor: pointer;
 }
 .cds h1 {
   font-size: 32px;
@@ -203,4 +211,110 @@ footer {
 }
 .cds {
   margin-left: 30px;
+}
+.van-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 548.15px;
+  text-align: left;
+}
+.van-detail h2,
+p {
+  margin-left: 30px;
+}
+.van-detail img {
+  margin: 0 auto;
+  width: 497.32px;
+}
+.van-detail button {
+  position: relative;
+  margin: 30px;
+}
+
+.van-detail h2,
+p {
+  margin-right: 30px;
+  margin-top: 0;
+}
+.van-detail .price {
+  margin-right: 30px;
+  font-size: 25px;
+}
+.rent {
+  height: 49.83px;
+  background-color: #ff8c38;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+.dash-nav {
+  text-align: left;
+  margin-left: 30px;
+}
+.dash-nav a {
+  color: black;
+  padding: 10px;
+}
+.dash-nav a:hover {
+  text-decoration: underline;
+}
+a.active-link {
+  color: red;
+  text-decoration: underline;
+}
+.vans-container {
+  display: block;
+  margin: 10px 5%;
+  margin-bottom: 50px;
+}
+.vans-container h1 {
+  text-align: left;
+  margin-top: 34px;
+  margin-bottom: 11px;
+}
+.van-list {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 494px;
+  height: 102px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  margin-top: 15px;
+}
+.van-list img {
+  width: 65.88px;
+  aspect-ratio: 1/1;
+  border-radius: 5px;
+  margin-left: 24px;
+}
+.van-list .head {
+  display: flex;
+  flex-direction: column;
+  padding-left: 17px;
+  line-height: 0.75;
+}
+.van-list p {
+  color: #4d4d4d;
+  font-size: 16px;
+}
+
+.back-button {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 0;
+  margin-left: 30px;
+  font-size: 10px;
+  margin-top: 9px;
+  color: black;
+}
+
+.back-button h2 {
+  padding-left: 5px;
+}
+.back-button h2:hover {
+  text-decoration: underline;
 }
