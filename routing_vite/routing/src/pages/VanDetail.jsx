@@ -1,37 +1,47 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link, useLocation } from 'react-router-dom';
 
 import '../App.css';
+import './van.css';
 
 export default function VanDetail() {
   const params = useParams();
-  const [van, setVan] = React.useState(null);
+  const location = useLocation();
+
+  const [currentVan, setCurrentVan] = React.useState(null);
 
   React.useEffect(() => {
     fetch(`/api/vans/${params.id}`)
       .then((res) => res.json())
       .then((data) => {
-        setVan(data);
+        setCurrentVan(data.vans);
       });
-  }, []);
+  }, [params.id]);
+
+  const search = location.state?.search || '';
+  const filterBack = location.state?.type.typeFilter || 'All';
+
   return (
-    <div>
-      <div className="van-detail-container">
-        {van ? (
+    <>
+      <Link to={`..${search}`} relative="path" className="back-button">
+        &larr; <h2> Back to {filterBack}</h2>
+      </Link>
+      <section className="van-detail-container">
+        {currentVan ? (
           <div className="van-detail">
-            <img src={van.vans.imageUrl} />
-            <button className={van.vans.type}>{van.vans.type}</button>
-            <h2>{van.vans.name}</h2>
+            <img src={currentVan.imageUrl} />
+            <button className={currentVan.type}>{currentVan.type}</button>
+            <h2>{currentVan.name}</h2>
             <p className="price">
-              <b>${van.vans.price}</b>/day
+              <b>${currentVan.price}</b>/day
             </p>
-            <p>{van.vans.description}</p>
+            <p>{currentVan.description}</p>
             <button className="rent">Rent this van</button>
           </div>
         ) : (
           <h2>Loading . . .</h2>
         )}
-      </div>
-    </div>
+      </section>
+    </>
   );
 }

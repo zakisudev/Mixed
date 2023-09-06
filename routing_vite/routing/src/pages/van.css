@@ -1,7 +1,8 @@
 .van-detail-container {
-  margin: 37px auto;
+  display: flex;
+  margin: 30px auto;
   width: 496px;
-  height: 499px;
+  height: auto;
 }
 .current-van-detail h2 {
   margin-top: 30px;
@@ -39,4 +40,11 @@
 .div .price b {
   font-size: 19.54px;
   line-height: 1.4;
+}
+.host-detail-links {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  margin-left: 30px;
+  margin-bottom: 30px;
 }

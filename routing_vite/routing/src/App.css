@@ -107,13 +107,11 @@ span {
 }
 
 footer {
-  color: AAAAAA;
+  color: #aaaaaa;
   text-align: center;
   padding-top: 22px;
   height: 74px;
-  width: 100%;
   background-color: #252525;
-  margin: 0;
 }
 
 .cards {
@@ -150,6 +148,9 @@ footer {
   border-radius: 5px;
   border: none;
 }
+.simple:hover {
+  background-color: #e17654;
+}
 .rugged {
   width: 85.71px;
   height: 34px;
@@ -161,6 +162,9 @@ footer {
   border-radius: 5px;
   border: none;
 }
+.rugged:hover {
+  background-color: #115e59;
+}
 .luxury {
   width: 85.71px;
   height: 34px;
@@ -171,6 +175,9 @@ footer {
   border-radius: 5px;
   border: none;
   left: 0;
+}
+.luxury:hover {
+  background-color: #161616;
 }
 .cards p {
   float: right;
@@ -189,7 +196,7 @@ footer {
   align-items: center;
   margin-right: 30px;
 }
-.filters button {
+/* .filters button {
   width: 104px;
   height: 37px;
   background-color: #ffead0;
@@ -198,9 +205,15 @@ footer {
   border: none;
   font-size: 16px;
   cursor: pointer;
-}
+} */
 .filters p {
   text-decoration: underline;
+  color: #4d4d4d;
+  cursor: pointer;
+}
+.filters p:hover {
+  text-decoration: underline;
+  font-weight: bold;
   color: #4d4d4d;
   cursor: pointer;
 }
@@ -211,6 +224,21 @@ footer {
 }
 .cds {
   margin-left: 30px;
+  margin-bottom: 10px;
+}
+.van-type {
+  height: 34px;
+  font-style: normal;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffead0;
+  color: #4d4d4d;
+  transition: 200ms all cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+.van-type:hover {
+  color: #ffead0;
 }
 .van-detail {
   display: flex;
@@ -219,17 +247,15 @@ footer {
   width: 548.15px;
   text-align: left;
 }
-.van-detail h2,
-p {
-  margin-left: 30px;
-}
+
 .van-detail img {
   margin: 0 auto;
   width: 497.32px;
 }
+
 .van-detail button {
   position: relative;
-  margin: 30px;
+  margin: 30px 0;
 }
 
 .van-detail h2,
@@ -237,10 +263,12 @@ p {
   margin-right: 30px;
   margin-top: 0;
 }
+
 .van-detail .price {
   margin-right: 30px;
   font-size: 25px;
 }
+
 .rent {
   height: 49.83px;
   background-color: #ff8c38;
@@ -317,4 +345,12 @@ a.active-link {
 }
 .back-button h2:hover {
   text-decoration: underline;
+}
+a.home-button {
+  margin: 10px;
+  padding: 5px 200px;
+  background-color: #161616;
+  color: white;
+  border: none;
+  border-radius: 5px;
 }
