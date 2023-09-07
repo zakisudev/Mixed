@@ -1,4 +1,5 @@
 import { NavLink, Link } from 'react-router-dom';
+
 import '../App.css';
 
 export default function Navbar() {
@@ -36,6 +37,14 @@ export default function Navbar() {
             className={({ isActive }) => (isActive ? 'active-link' : null)}
           >
             Vans
+          </NavLink>
+        }
+        {
+          <NavLink
+            to="/login"
+            className={({ isActive }) => (isActive ? 'active-link' : null)}
+          >
+            <i className="fa-solid fa-user" />
           </NavLink>
         }
       </div>
