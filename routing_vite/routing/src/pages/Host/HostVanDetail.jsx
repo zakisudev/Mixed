@@ -18,19 +18,21 @@ export default function HostVanDetail() {
         setCurrentVan(data.vans);
       });
   }, []);
-  if (!currentVan) {
+
+  if (!currentVan || currentVan.length === 0) {
     return <h1>Loading . . .</h1>;
   }
+
   return (
-    <section>
-      <Link to=".." relative="path" className="back-button">
-        &larr; <h2> Back to all vans</h2>
-      </Link>
-      <div className="van-detail-container">
-        <div className="current-van-detail">
+    currentVan && (
+      <section className="current-van-detail">
+        <Link to="../" relative="path" className="back-button">
+          &larr; <h2> Back to all vans</h2>
+        </Link>
+        <div className="van-detail-container">
           <div className="new-detail">
             <div>
-              <img src={currentVan.imageUrl} alt="" />
+              <img src={currentVan[0].imageUrl} alt="" />
             </div>
             <div className="div">
               <button className={currentVan.type}>{currentVan.type}</button>
@@ -41,29 +43,31 @@ export default function HostVanDetail() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="host-detail-links">
-        <NavLink
-          to="."
-          end
-          style={({ isActive }) => (isActive ? activeStyles : null)}
-        >
-          Detail
-        </NavLink>
-        <NavLink
-          to="pricing"
-          style={({ isActive }) => (isActive ? activeStyles : null)}
-        >
-          Pricing
-        </NavLink>
-        <NavLink
-          to="photos"
-          style={({ isActive }) => (isActive ? activeStyles : null)}
-        >
-          Photos
-        </NavLink>
-        <Outlet context={{ currentVan }} />
-      </div>
-    </section>
+        <div className="host-detail-links">
+          <div className="detail-nav">
+            <NavLink
+              to="."
+              end
+              style={({ isActive }) => (isActive ? activeStyles : null)}
+            >
+              Detail
+            </NavLink>
+            <NavLink
+              to="pricing"
+              style={({ isActive }) => (isActive ? activeStyles : null)}
+            >
+              Pricing
+            </NavLink>
+            <NavLink
+              to="photos"
+              style={({ isActive }) => (isActive ? activeStyles : null)}
+            >
+              Photos
+            </NavLink>
+          </div>
+          <Outlet context={{ currentVan }} />
+        </div>
+      </section>
+    )
   );
 }

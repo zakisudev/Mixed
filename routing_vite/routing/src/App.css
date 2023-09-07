@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600&display=swap');
 
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   text-align: center;
   font-family: 'Inter', sans-serif;
@@ -37,7 +36,7 @@
 
 .slogan {
   display: block;
-  height: 386.7px;
+  height: 80vh;
   width: 100vw;
   text-align: left;
   padding: 30px;
@@ -111,11 +110,13 @@ footer {
   text-align: center;
   padding-top: 22px;
   height: 74px;
+  width: 100vw;
   background-color: #252525;
 }
 
 .cards {
   width: 229.23px;
+  margin-left: 20px;
   height: 306.96px;
   position: relative;
   margin-top: 26.91px;
@@ -184,19 +185,18 @@ footer {
 }
 .lists {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  margin: 0 15px;
   flex-wrap: wrap;
-  margin-right: 30px;
   margin-bottom: 30px;
 }
 .filters {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 30px;
+  margin: 0 30px;
 }
-/* .filters button {
+.filters button {
   width: 104px;
   height: 37px;
   background-color: #ffead0;
@@ -205,7 +205,7 @@ footer {
   border: none;
   font-size: 16px;
   cursor: pointer;
-} */
+}
 .filters p {
   text-decoration: underline;
   color: #4d4d4d;
@@ -221,10 +221,13 @@ footer {
   font-size: 32px;
   color: #161616;
   text-align: left;
+  padding-left: 30px;
 }
 .cds {
-  margin-left: 30px;
-  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
 }
 .van-type {
   height: 34px;
@@ -276,10 +279,11 @@ p {
   border-radius: 5px;
   color: white;
   font-weight: bold;
+  cursor: pointer;
 }
 .dash-nav {
   text-align: left;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 .dash-nav a {
   color: black;
@@ -329,23 +333,6 @@ a.active-link {
   font-size: 16px;
 }
 
-.back-button {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  margin: 0;
-  margin-left: 30px;
-  font-size: 10px;
-  margin-top: 9px;
-  color: black;
-}
-
-.back-button h2 {
-  padding-left: 5px;
-}
-.back-button h2:hover {
-  text-decoration: underline;
-}
 a.home-button {
   margin: 10px;
   padding: 5px 200px;
@@ -359,6 +346,7 @@ a.home-button {
   flex-direction: column;
   align-items: center;
   padding-inline: 27px;
+  margin-bottom: 30px;
 }
 #login-first {
   color: red;
@@ -369,23 +357,27 @@ a.home-button {
   flex-direction: column;
   width: 100%;
   max-width: 500px;
+  margin-top: 10px;
 }
 
 .login-form > input {
   border: 1px solid rgba(209, 213, 219);
-  height: 40px;
+  height: 50px;
   text-indent: 10px;
   font-family: 'Inter', sans-serif;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
-  font-weight: 400;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-top: 10px;
 }
 
 .login-form > input:focus {
-  outline: none;
+  outline: 1px solid rgb(0, 214, 0);
 }
 
 .login-form > input:first-of-type {
   border-radius: 6px 6px 0px 0px;
+  border-bottom: none;
 }
 
 .login-form > input:last-of-type {
@@ -401,6 +393,8 @@ a.home-button {
   margin-top: 22px;
   color: white;
   font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 .fa-user {
   color: black;

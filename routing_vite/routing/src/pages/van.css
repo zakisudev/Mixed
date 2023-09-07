@@ -1,18 +1,36 @@
 .van-detail-container {
   display: flex;
-  margin: 30px auto;
-  width: 496px;
-  height: auto;
+  margin: 30px;
+  justify-content: left;
 }
-.current-van-detail h2 {
-  margin-top: 30px;
-  font-size: 15.95px;
+
+.back-button {
+  display: flex;
+  justify-content: left;
+  align-items: center;
   margin-left: 30px;
+  font-size: 10px;
+  margin-top: 30px;
+  color: black;
+}
+
+.back-button h2 {
+  margin-left: 5px;
+}
+
+.back-button h2:hover {
+  text-decoration: underline;
+}
+
+.current-van-detail h2 {
+  font-size: 15.95px;
   margin-bottom: -5px;
 }
+
 .current-van-detail button {
   position: relative;
 }
+
 .current-van-detail img {
   width: 160px;
   aspect-ratio: 1/1;
@@ -23,28 +41,42 @@
   display: flex;
   align-items: center;
 }
+
 .div {
   margin-left: 30px;
   text-align: left;
   margin-top: 0;
 }
+
 .div h2 {
   font-size: 26.26px;
   margin-top: 10px;
   margin-left: 0;
 }
+
 .div p {
   margin-top: 5px;
   margin-left: 0;
 }
+
 .div .price b {
   font-size: 19.54px;
   line-height: 1.4;
 }
+
 .host-detail-links {
-  margin: 0;
-  padding: 0;
   text-align: left;
   margin-left: 30px;
   margin-bottom: 30px;
+}
+
+.detail-nav {
+  display: flex;
+  width: 300px;
+  justify-content: space-evenly;
+  margin-left: -40px;
+  margin-bottom: 15px;
+}
+.host-van-detail-info h4 {
+  margin-top: 10px;
 }
