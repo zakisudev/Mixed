@@ -1,21 +1,20 @@
 import React from 'react';
 import Card from '../components/Card';
-import { Link, useSearchParams } from 'react-router-dom';
+import { Link, useSearchParams, useLoaderData } from 'react-router-dom';
+
+import { getVans } from '../apis';
+
 import '../App.css';
 
+export function loader() {
+  return getVans();
+}
 export default function Vans() {
-  const [vans, setVans] = React.useState([]);
   const [searchParams, setSearchParams] = useSearchParams();
 
   const typeFilter = searchParams.get('type');
 
-  React.useEffect(() => {
-    fetch('/api/vans')
-      .then((res) => res.json())
-      .then((data) => {
-        setVans(data.vans);
-      });
-  }, []);
+  const vans = useLoaderData();
 
   const displayedVans = typeFilter
     ? vans.filter((van) => van.type === typeFilter)

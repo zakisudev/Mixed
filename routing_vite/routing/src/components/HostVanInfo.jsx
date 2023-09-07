@@ -13,13 +13,13 @@ function HostVanInfo() {
       {currentVan && (
         <section className="host-van-detail-info">
           <h4>
-            Name: <p>{currentVan[0].name}</p>
+            Name: <p>{currentVan.name}</p>
           </h4>
           <h4>
-            Category: <p>{currentVan[0].type}</p>
+            Category: <p>{currentVan.type}</p>
           </h4>
           <h4>
-            Description: <p>{currentVan[0].description}</p>
+            Description: <p>{currentVan.description}</p>
           </h4>
           <h4>
             Visibility: <p style={{ display: 'inline' }}>Public</p>

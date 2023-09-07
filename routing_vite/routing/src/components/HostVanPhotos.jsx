@@ -7,5 +7,5 @@ export default function HostVanPhotos() {
   if (!currentVan) {
     return <h1>Loading . . .</h1>;
   }
-  return <img src={currentVan[0].imageUrl} className="host-van-detail-image" />;
+  return <img src={currentVan.imageUrl} className="host-van-detail-image" />;
 }

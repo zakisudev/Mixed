@@ -6,6 +6,7 @@
   font-family: 'Inter', sans-serif;
   background-color: #fff7ed;
 }
+
 #logo {
   margin-left: 36px;
 }
@@ -357,7 +358,7 @@ a.home-button {
   flex-direction: column;
   width: 100%;
   max-width: 500px;
-  margin-top: 10px;
+  margin: 50px;
 }
 
 .login-form > input {
@@ -396,6 +397,15 @@ a.home-button {
   font-size: 1.5rem;
   cursor: pointer;
 }
+.login-container h4 {
+  font-size: 20px;
+  color: red;
+  margin-top: 5px;
+  font-weight: 400;
+}
 .fa-user {
   color: black;
+}
+.create-one a {
+  color: rgb(255, 125, 125);
 }

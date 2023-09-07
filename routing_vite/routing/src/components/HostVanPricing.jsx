@@ -10,7 +10,7 @@ export default function HostVanPricing() {
 
   return (
     <h3 className="host-van-price">
-      ${currentVan[0].price}
+      ${currentVan.price}
       <span> /day</span>
     </h3>
   );

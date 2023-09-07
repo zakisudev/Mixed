@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 import '../App.css';
 
-export default function Page404() {
+export default function NotFound() {
   return (
     <div style={{ height: '200px' }}>
       <h1>Sorry, the page you were looking for was not found.</h1>
